@@ -6,14 +6,19 @@ Marketplace app developed from 3rd Node.js module classes.
 
 Here are some frameworks and packages used in this project:
 
-API
+Server
 
 -   Express
+-   JWT (JSON Web Token)
 
 Database
 
 -   mongoose
 -   MongoDB (docker container)
+
+Other
+
+-   bcryptjs (encrypt passwords)
 
 Development
 

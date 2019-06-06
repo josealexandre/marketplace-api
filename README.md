@@ -19,6 +19,7 @@ Database
 Other
 
 -   bcryptjs (encrypt passwords)
+-   require-dir (import all controllers with one line of code)
 
 Development
 

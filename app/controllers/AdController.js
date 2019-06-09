@@ -2,15 +2,32 @@ const Ad = require('../models/Ad')
 
 class AdController {
     async index (req, res) {
-        const ad = await Ad.paginate(
-            {},
-            {
-                page: req.query.page || 1,
-                limit: 20,
-                sort: '-createdAt',
-                populate: ['author']
+        const filters = {}
+
+        const { price_min: priceMin, price_max: priceMax, title } = req.query
+
+        if (priceMin || priceMax) {
+            filters.price = {}
+
+            if (priceMin) {
+                filters.price.$gte = priceMin
             }
-        )
+
+            if (priceMax) {
+                filters.price.$lte = priceMax
+            }
+        }
+
+        if (title) {
+            filters.title = new RegExp(title, 'i')
+        }
+
+        const ad = await Ad.paginate(filters, {
+            page: req.query.page || 1,
+            limit: 20,
+            sort: '-createdAt',
+            populate: ['author']
+        })
 
         return res.json(ad)
     }

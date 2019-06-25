@@ -9,8 +9,6 @@ class PurchaseController {
         const purchaseAd = await Ad.findById(ad).populate('author')
         const user = await User.findById(req.userId)
 
-        Mail.sendMail()
-
         await Mail.sendMail({
             from: '"Alexandre Junior" <jasj_jr@hotmail.com>', // sender address
             to: purchaseAd.author.email,

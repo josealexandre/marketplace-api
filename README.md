@@ -20,6 +20,8 @@ Other
 
 -   bcryptjs (encrypt passwords)
 -   require-dir (import all controllers with one line of code)
+-   nodemailer (module to help sending email)
+-   Mailtrap (online service to help testing email sending)
 
 Development
 

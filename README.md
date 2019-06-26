@@ -22,6 +22,7 @@ Other
 -   require-dir (import all controllers with one line of code)
 -   nodemailer (module to help sending email)
 -   Mailtrap (online service to help testing email sending)
+-   handlebars (template engine to email messages)
 
 Development
 

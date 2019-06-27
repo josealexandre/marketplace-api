@@ -23,10 +23,18 @@ Other
 -   nodemailer (module to help sending email)
 -   Mailtrap (online service to help testing email sending)
 -   handlebars (template engine used in this project to create template for emails)
+-   Kue (module for job queue like send emails)
+-   Redis (used to store the queue)
 
 Development
 
 -   Nodemon
 -   ESLint
 
+Running mongo in a container
+
 `docker run --name mongonode -p 27017:27017 -d -t mongo`
+
+Running redis in a container
+
+`docker run --name redisnode -p 6379:6379 -d -t redis:alpine`

@@ -26,6 +26,7 @@ Other
 -   Kue (module for job queue like send emails)
 -   Redis (used to store the queue)
 -   Joi (schema validator to the requests)
+-   express-validation (middleware that uses Joi to validate requests)
 
 Development
 

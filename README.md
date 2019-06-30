@@ -25,6 +25,7 @@ Other
 -   handlebars (template engine used in this project to create template for emails)
 -   Kue (module for job queue like send emails)
 -   Redis (used to store the queue)
+-   Joi (schema validator to the requests)
 
 Development
 

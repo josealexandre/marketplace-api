@@ -27,6 +27,8 @@ Other
 -   Redis (used to store the queue)
 -   Joi (schema validator to the requests)
 -   express-validation (middleware that uses Joi to validate requests)
+-   Youch (error formatter for development)
+-   express-async-handler (to throw exceptions ocurring in async controllers to the exception handler)
 
 Development
 

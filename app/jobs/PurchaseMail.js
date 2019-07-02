@@ -8,7 +8,7 @@ class PurchaseMail {
     async handle (job, done) {
         const { ad, user, content } = job.data
 
-        await Mail.sendMail({
+        await Mail.sendfdMail({
             from: '"Alexandre Junior" <jasj_jr@hotmail.com>', // sender address
             to: ad.author.email,
             subject: `Solicitação de compra: ${ad.title}`,

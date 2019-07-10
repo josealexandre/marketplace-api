@@ -45,4 +45,11 @@ routes.post(
     handle(controllers.PurchaseController.store)
 )
 
+// Sales
+routes.post(
+    '/sales',
+    validate(validators.Sale),
+    handle(controllers.SaleController.store)
+)
+
 module.exports = routes

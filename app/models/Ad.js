@@ -19,6 +19,11 @@ const AdSchema = new mongoose.Schema({
         ref: 'User',
         required: true
     },
+    purchasedBy: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Purchase',
+        required: false
+    },
     createdAt: {
         type: Date,
         default: Date.now

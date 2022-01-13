@@ -1,6 +1,6 @@
-# Module 3
+# Marketplace API
 
-Marketplace app developed from 3rd Node.js module classes.
+Marketplace API developed using Node.js for study purposes
 
 ## Frameworks and packages
 
